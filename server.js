@@ -5,7 +5,7 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { v4 as uuidv4 } from "uuid";
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3001;
 const dbPath = "./db/db.json";
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
